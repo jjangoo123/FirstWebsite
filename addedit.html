@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RYAN Park New User</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet"href="css/common.css" type="text/css">
+        <script src="script/myscript.js"></script>
+    </head>
+    <body onload="pload()">
+        <img src="img/logo.png" alt="logo">
+         <p id ="date1">Date</p>
+        <p id ="time1">Time</p>
+        <h3>Navigation</h3>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="addedit.html">New User</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                
+            </ul>    
+        </nav>
+        <h1>Welcome to the RYAN park!</h1>
+        <h2>Please enter your details</h2>
+        <form action="insert.php" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td><td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td><td><input type="date" name="dob" required></td>
+                </tr>
+                 <tr>
+                    <td>CITY:</td><td><input type="text" name="city" required></td>
+                </tr>
+                <tr>
+                    <td>PHONE:</td><td><input type="number" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td><td><input type="text" name="password1" required></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td><td><input type="text" name="password2" onblur="checkPassword()" required></td>
+                </tr>
+                <tr><td><input type=reset value="RESET" style="width:100%; height:40px;"></td><td><input type=submit value="SUBMIT" style="width:100%; height: 40px;"></td></tr>
+            </table>
+        </form>
+    
+    <footer>
+            <p>Copyright &copy; 2019 - All rights Reserved</p>
+            <p>Keunyoung Kwak</p>
+        </footer>
+        </body>
+</html>
